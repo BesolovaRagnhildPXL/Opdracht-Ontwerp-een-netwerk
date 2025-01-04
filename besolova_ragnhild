@@ -1,0 +1,34 @@
+## **Netwerk bouwen vanaf nul**
+
+**Configuratie R1**
+
+Basisconfiguratie 
+
+hostname R1
+enable secret cisco
+line console 0
+password console
+login
+logging synchronous
+exit
+service password-encryption
+
+
+
+
+**Configuratie SW1**
+
+Basisconfiguratie
+
+hostname SW1
+enable secret cisco
+line console 0
+password console
+login
+exit
+service password-encryption
+banner motd #Authorized access only! #
+
+
+
+
